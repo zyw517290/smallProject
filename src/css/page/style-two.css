@@ -1,0 +1,110 @@
+@import "../lib/reset.css";
+body{
+  overflow: hidden;
+}
+/*个人中心模块*/
+.login-module{
+  padding: 13px 12px;
+  background-color: #229bf1;
+
+}
+.login-header-icoin{
+  display: block;
+  width: 19px;
+  height: 35px;
+  background: url(../../images/login/images/span-icoin.png)no-repeat -30px -458px;
+}
+.login-photo{
+  box-sizing: border-box;
+  width:83px;
+  height: 84px;
+  margin: 18px auto;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.login-photo .photo-box{
+  max-width: 83px;
+  max-height: 84px;
+  display: table-cell;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.photo-box img{
+  width: 83px;
+  height: 84px;
+  vertical-align: middle;
+}
+.login-btn{
+  text-align: center;
+}
+.login-btn .btn-login{
+    font-size: 1.2rem;
+    background-color: #38a5f3;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 6px 7px;
+    color:#ffffff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+
+
+/*个人详情信息*/
+.login-list{
+    padding: 0 17px;
+}
+.login-list .list-li{
+   box-sizing: border-box;
+   display: block;
+   color:#787878;
+   font-size: 1rem;
+   padding: 19px 0;
+}
+.list-span{
+  vertical-align: middle;
+  padding-right: 20px;
+}
+.login-list-one{
+  display:inline-block;
+  background: url(../../images/login/images/list-icoin.png)no-repeat -3px -4px ;
+  width: 15px;
+  height: 15px;
+}
+.login-list-two{
+  display:inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../../images/login/images/list-icoin.png)no-repeat -3px -37px;
+}
+.login-list-three{
+  display:inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../../images/login/images/list-icoin.png)no-repeat -3px -79px;
+}
+
+/*遮罩层*/
+/*.login-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.login-footer-content{
+  color: #2c85ff;
+
+}
+.login-footer-content-two{
+  color:#000;
+  margin-top: 5px;
+}
+.login-footer a{
+  background-color: #fff;
+   display: block;
+   text-align: center;
+   cursor:pointer;
+   padding: 12px 0;
+}*/

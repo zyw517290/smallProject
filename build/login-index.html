@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="../src/css/page/style-login.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <!--头部-->
+    <div class="login_header">
+        <a class="login_header_back"></a>
+        <span class="login_header_title">登录百度账号</span>
+    </div>
+    <!--主体-->
+    <div class="login_main">
+        <form action="" class="login_form">
+            <!--logo图-->
+            <div class="login_logo"></div>
+            <!--输入提交部分-->
+            <p class="login_username_div">
+                <input type="text" class="username_txt" placeholder="手机号/邮箱/用户名">
+            </p>
+
+            <p class="login_password_div">
+                <input type="password" class="password_txt"placeholder="密码">
+            </p>
+
+            <div class="login_verify_div" id="login_verify_div">
+                <div class="verify_left">
+                <input type="text" class="login_verify" id="js_login_verify" placeholder="验证码" autocomplete="off";>
+                </div>
+                <div class="verify_img">
+                    <input type="text" readonly="readonly"  id="verify_code" onclick="createCode()" class="verify_code"  title='点击更换验证码' />
+                </div>
+            </div>
+
+            <div class="login_btn_div">
+                <button class="login_btn" id="login_btn">登录</button>
+            </div>
+
+            <p class="login_hint">
+                <a class="hint_left" onclick="noverify()" >登录遇到问题</a>
+                <a class="hint_right" onclick="alert(111)">其他登录方式</a>
+            </p>
+
+
+        </form>
+
+    </div>
+
+    <!--底部-->
+    <div class="login_footer">
+        <a class="login_footer_signin">立即注册</a>
+
+    </div>
+
+</body>
+<script>
+
+        window.onload=function(){
+            createCode();
+        }
+        var login_btn = document.getElementById('login_btn');
+        var v = document.getElementById('login_verify_div');
+        function cc(){
+            login_btn.onclick=function () {
+                validate();
+            }
+        }
+        function noverify() {
+
+            if(v.style.display=="none"){
+                v.style.display="block";
+                cc();
+            }else {
+                v.style.display="none";
+
+            }
+        }
+//        验证验证码
+
+</script>
+<script type='text/javascript' src="../src/js/page/style-login.js"></script>
+
+</html>
