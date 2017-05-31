@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>用户登录</title>
-    <link rel="stylesheet" href="../src/css/page/style-login.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../src/css/page/style-two.css">
 </head>
 <body>
     <!--头部-->
@@ -43,44 +43,12 @@
                 <a class="hint_left" onclick="noverify()" >登录遇到问题</a>
                 <a class="hint_right" onclick="alert(111)">其他登录方式</a>
             </p>
-
-
         </form>
-
     </div>
-
-    <!--底部-->
     <div class="login_footer">
         <a class="login_footer_signin">立即注册</a>
-
     </div>
-
 </body>
-<script>
-
-        window.onload=function(){
-            createCode();
-        }
-        var login_btn = document.getElementById('login_btn');
-        var v = document.getElementById('login_verify_div');
-        function cc(){
-            login_btn.onclick=function () {
-                validate();
-            }
-        }
-        function noverify() {
-
-            if(v.style.display=="none"){
-                v.style.display="block";
-                cc();
-            }else {
-                v.style.display="none";
-
-            }
-        }
-//        验证验证码
-
-</script>
-<script type='text/javascript' src="../src/js/page/style-login.js"></script>
+<script type='text/javascript' src="../src/js/page/render-two.js"></script>
 
 </html>
